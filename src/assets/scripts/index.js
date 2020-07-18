@@ -8,7 +8,7 @@ const kelly = {
 const kitchen = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595082711/memscape94/Kitchen.mp4",
   id: "#kitchen",
-  videoGridArea: "3 / 9 / 8 / 15"
+  videoGridArea: "3 / 11 / 8 / 17"
 }
 const jamie = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595085604/memscape94/ms94_Jamie_FINAL.mp4",
@@ -23,17 +23,17 @@ const parents = {
 const hallway = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595083775/memscape94/Hallway.mp4",
   id: "#hallway",
-  videoGridArea: "5 / 2 / 10 / 8"
+  videoGridArea: "5 / 6 / 10 / 12"
 }
 const living = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595086174/memscape94/living_room-.mp4",
   id: "#living-room",
-  videoGridArea: "6 / 15 / 11 / 21"
+  videoGridArea: "2 / 8 / 7 / 14"
 }
 const bathroom = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595084303/memscape94/Bathroom.mp4",
   id: "#bathroom",
-  videoGridArea: "5 / 4 / 10 / 10"
+  videoGridArea: "1 / 10 / 6 / 16"
 }
 const slide = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595085854/memscape94/ms94_Slide_FINAL.mp4",
@@ -58,4 +58,14 @@ areas.forEach(area => {
     let video = videoArea.firstElementChild;
     video.pause();
   });
+})
+
+
+const daisy = document.querySelector('#daisy-clock');
+const credits = document.querySelector('.credits');
+daisy.addEventListener('mouseover', function() {
+  credits.style.display = 'block';
+})
+daisy.addEventListener('mouseleave', function() {
+  credits.style.display = 'none';
 })

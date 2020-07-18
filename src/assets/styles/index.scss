@@ -92,3 +92,17 @@ body {
   z-index: -10;
 }
 
+.credits {
+  display: none;
+  background: white;
+  border: 3px solid black;
+  width: 25ch;
+  word-wrap: break-word;
+  padding: 5px;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-size: .85rem;
+}
+
+
