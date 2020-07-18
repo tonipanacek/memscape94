@@ -1,12 +1,14 @@
 const foo = (() => Promise.resolve().then(() => console.log('Hello Memscape94 World')))();
 
+const audio = document.querySelector('#bg-sound');
+
 const kelly = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595086133/memscape94/kelly_room.mp4",
   id: "#kelly-room",
   videoGridArea: "2 / 14 / 7 / 20"
 }
 const kitchen = {
-  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595082711/memscape94/Kitchen.mp4",
+  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595093961/memscape94/ms94_Kitchen_FINAL.mp4",
   id: "#kitchen",
   videoGridArea: "3 / 11 / 8 / 17"
 }
@@ -47,6 +49,7 @@ const videoArea = document.querySelector('#video-area');
 areas.forEach(area => {
   const div = document.querySelector(area.id);
   div.addEventListener('mouseover', function(event) {
+    audio.pause();
     videoArea.style.gridArea = area.videoGridArea;
     videoArea.style.display = "block";
     let video = videoArea.firstElementChild;
@@ -57,15 +60,7 @@ areas.forEach(area => {
     videoArea.style.display = "none";
     let video = videoArea.firstElementChild;
     video.pause();
+    audio.play();
   });
 })
 
-
-// const daisy = document.querySelector('#daisy-clock');
-// const credits = document.querySelector('.credits');
-// daisy.addEventListener('mouseover', function() {
-//   credits.style.display = 'block';
-// })
-// daisy.addEventListener('mouseleave', function() {
-//   credits.style.display = 'none';
-// })
