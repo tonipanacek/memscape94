@@ -3,7 +3,7 @@ const foo = (() => Promise.resolve().then(() => console.log('Hello Memscape94 Wo
 const audio = document.querySelector('#bg-sound');
 
 const kelly = {
-  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595086133/memscape94/kelly_room.mp4",
+  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595097200/memscape94/ms94_kellyroom_FINAL.mp4",
   id: "#kelly-room",
   videoGridArea: "2 / 14 / 7 / 20"
 }
@@ -28,7 +28,7 @@ const hallway = {
   videoGridArea: "5 / 6 / 10 / 12"
 }
 const living = {
-  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595086174/memscape94/living_room-.mp4",
+  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595097014/memscape94/ms94_livingroom_FINAL.mp4",
   id: "#living-room",
   videoGridArea: "2 / 8 / 7 / 14"
 }
