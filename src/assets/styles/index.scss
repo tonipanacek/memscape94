@@ -3,7 +3,6 @@ $bg-body: antiquewhite;
 
 html,
 body {
-  height: 100%;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -12,6 +11,9 @@ body {
   background-color: $bg-body;
   background-image: url('../images/ms94_landingpage.png');
   background-size: cover;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 
@@ -34,12 +36,59 @@ body {
   }
 }
 
-#kelly-room { grid-area: 4 / 12 / 6 / 14; }
-#parents-room { grid-area: 4 / 8 / 5 / 10; }
-#jamies-room { grid-area: 5 / 9 / 7 / 11; }
-#hallway { grid-area: 7 / 15 / 11 / 15; }
-#living-room { grid-area: 5 / 14 / 7 / 16; }
-#bathroom { grid-area: 7 / 12 / 9 / 14 ; }
-#slide-room { grid-area: 7 / 17 / 10 / 19 ; }
-#kitchen { grid-area: 4 / 17 / 7 / 19; }
+#kelly-room {
+  grid-area: 4 / 12 / 6 / 14;
+  z-index: 50;
+}
+#parents-room {
+  grid-area: 4 / 8 / 5 / 10;
+  z-index: 50;
+}
+#jamies-room {
+  grid-area: 5 / 9 / 7 / 11;
+  z-index: 50;
+}
+#hallway {
+  grid-area: 7 / 15 / 11 / 15;
+  z-index: 50;
+}
+#living-room {
+  grid-area: 5 / 14 / 7 / 16;
+  z-index: 50;
+}
+#bathroom {
+  grid-area: 7 / 12 / 9 / 14 ;
+  z-index: 50;
+}
+#slide-room {
+  grid-area: 7 / 17 / 10 / 19 ;
+  z-index: 50;
+}
+#kitchen {
+  grid-area: 4 / 17 / 7 / 19;
+  z-index: 50;
+}
+
+#rock-lobster {
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#daisy-clock {
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+}
+
+#light-brite {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+}
 
