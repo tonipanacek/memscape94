@@ -21,7 +21,7 @@ const parents = {
   videoGridArea: "1 / 3 / 6 / 9"
 }
 const hallway = {
-  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595083775/memscape94/Hallway.mp4",
+  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595093665/memscape94/ms94_Hallway_FINAL.mp4",
   id: "#hallway",
   videoGridArea: "5 / 6 / 10 / 12"
 }
@@ -31,7 +31,7 @@ const living = {
   videoGridArea: "2 / 8 / 7 / 14"
 }
 const bathroom = {
-  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595084303/memscape94/Bathroom.mp4",
+  src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595092539/memscape94/ms94_Bathroom_FINAL.mp4",
   id: "#bathroom",
   videoGridArea: "1 / 10 / 6 / 16"
 }
@@ -61,11 +61,11 @@ areas.forEach(area => {
 })
 
 
-const daisy = document.querySelector('#daisy-clock');
-const credits = document.querySelector('.credits');
-daisy.addEventListener('mouseover', function() {
-  credits.style.display = 'block';
-})
-daisy.addEventListener('mouseleave', function() {
-  credits.style.display = 'none';
-})
+// const daisy = document.querySelector('#daisy-clock');
+// const credits = document.querySelector('.credits');
+// daisy.addEventListener('mouseover', function() {
+//   credits.style.display = 'block';
+// })
+// daisy.addEventListener('mouseleave', function() {
+//   credits.style.display = 'none';
+// })

@@ -33,6 +33,7 @@ body {
     height: 100%;
     border: 3px solid black;
     object-fit: fill;
+    z-index: 10;
   }
 }
 
@@ -92,17 +93,30 @@ body {
   z-index: -10;
 }
 
-.credits {
-  display: none;
-  background: white;
-  border: 3px solid black;
-  width: 25ch;
-  word-wrap: break-word;
-  padding: 5px;
+.credits-hover {
   position: absolute;
-  bottom: 10%;
-  left: 10%;
-  font-size: .85rem;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  &:hover {
+    .credits {
+      display: block;
+    }
+  }
+  .credits {
+    display: none;
+    background: white;
+    border: 3px solid black;
+    width: 25ch;
+    word-wrap: break-word;
+    padding: 5px;
+    position: absolute;
+    bottom: 40%;
+    left: 80%;
+    font-size: .85rem;
+  }
 }
+
 
 
