@@ -4,6 +4,18 @@
     {% include "head.njk" %}
   </head>
   <body class="{{ bodyClass }}">
-    {{ content | safe }}
+    <div class="grid-container">
+      <div id="video-area">
+        <video id="video" src=""></video>
+      </div>
+      <div id="kelly-room"></div>
+      <div id="parents-room"></div>
+      <div id="jamies-room"></div>
+      <div id="hallway"></div>
+      <div id="living-room"></div>
+      <div id="bathroom"></div>
+      <div id="slide-room"></div>
+      <div id="kitchen"></div>
+    </div>
   </body>
 </html>

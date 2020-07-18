@@ -10,18 +10,34 @@ body {
 
 body {
   background-color: $bg-body;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url('../images/ms94_landingpage.png');
   background-size: cover;
 }
 
-h1 {
-  color: $blue;
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(20, 1fr);
 }
 
-img {
-  width: 15vw;
-  max-width: 6.25rem;
+#video-area {
+  grid-area: 5 / 2 / 10 / 8;
+  display: none;
+  video {
+    width: 100%;
+    height: 100%;
+  }
 }
+
+#kelly-room { grid-area: 4 / 12 / 6 / 14; }
+#parents-room { grid-area: 4 / 8 / 5 / 10; }
+#jamies-room { grid-area: 5 / 9 / 7 / 11; }
+#hallway { grid-area: 7 / 15 / 11 / 15; }
+#living-room { grid-area: 5 / 14 / 7 / 16; }
+#bathroom { grid-area: 7 / 12 / 9 / 14 ; }
+#slide-room { grid-area: 7 / 17 / 10 / 19 ; }
+#kitchen { grid-area: 4 / 17 / 7 / 19; }
+
