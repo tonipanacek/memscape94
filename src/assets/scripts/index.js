@@ -15,7 +15,7 @@ const kitchen = {
 const jamie = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595085604/memscape94/ms94_Jamie_FINAL.mp4",
   id: "#jamies-room",
-  videoGridArea: "4 / 12 / 9 / 18"
+  videoGridArea: "5 / 2 / 10 / 8"
 }
 const parents = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595085793/memscape94/ms94_Parents_FINAL.mp4",
@@ -40,7 +40,7 @@ const bathroom = {
 const slide = {
   src: "https://res.cloudinary.com/tonipanoche/video/upload/v1595085854/memscape94/ms94_Slide_FINAL.mp4",
   id: "#slide-room",
-  videoGridArea: "5 / 2 / 10 / 8"
+  videoGridArea: "4 / 12 / 9 / 18"
 }
 
 const areas = [kelly, kitchen, jamie, parents, hallway, living, bathroom, slide]
